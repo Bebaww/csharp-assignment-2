@@ -42,12 +42,14 @@ class calculate
     static void Main(string[] args)
     {
         circle c = new circle();
-        c.radius = 10;
+        Console.WriteLine("enter the value of the radius");
+       c. radius= Convert.ToInt32 (  Console.ReadLine());
       Console.WriteLine  ("circle area=" + c.calculatearea());
        Console.WriteLine("circle parameter=" + c.calculateparameter());
         rectangle r= new rectangle();
-        r.length = 5;
-        r.weidth = 6;
+        Console.WriteLine("enter the values of length and width");
+        r.length= Convert.ToInt32 ( Console.ReadLine());
+        r.weidth= Convert.ToInt32 ( Console.ReadLine());
         Console.WriteLine("rectangle area=" + r.calculatearea());
         Console.WriteLine("rectangle perimeter=" + r.calculateparameter());
 
